@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>List your old car!</title>
+
+  </head>
+
+  <body>
+
+    <div class='container'>
+
+      <div class="page-header">
+
+        <h1>List your old car!</h1>
+
+
+      </div>
+
+      <form action='/seller_confirm' method='post'>
+
+        <div class='form-group'>
+          <label for='seller_make'>Enter your make and model:</label>
+          <input id='seller_make' name='seller_make' class='form-control' type='text'>
+        </div>
+
+        <div class='form-group'>
+          <label for='seller_price'>Enter your price:</label>
+          <input id='seller_price' name='seller_price' class='form-control' type='number'>
+        </div>
+
+        <div class='form-group'>
+          <label for='seller_miles'>Enter your mileage:</label>
+          <input id='seller_miles' name='seller_miles' class='form-control' type='number'>
+        </div>
+
+        <div class='form-group'>
+          <label for='seller_picture'>Add a link to the picture of your car:</label>
+          <input id='seller_picture' name='seller_picture' class='form-control' type='url'>
+        </div>
+
+        <button type='submit' class='btn-success'>Search</button>
+
+      </form>
+
+    </div>
+
+    </body>
+  </html>

@@ -43,6 +43,14 @@
       }
     }
 
+    static function getAll() {
+      return $_SESSION['list_of_cars'];
+    }
+
+    static function deleteAll() {
+      $_SESSION['list_of_cars'] = array();
+    }
+
     function certainSpecs($user_price, $user_miles) {
 
       if (($this->price <= $user_price) && ($this->miles <= $user_miles)) {
@@ -53,7 +61,14 @@
       }
     }
 
+    function save() {
+        array_push($_SESSION['list_of_cars'], $this);
+    }
   }
+
+
+
+
 
   function searchCars(array $cars, $user_price, $user_miles) {
     $arrayOfCars = array();

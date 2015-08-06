@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
+    <title>Your new car!</title>
+
+  </head>
+  <body>
+
+    <div class='container'>
+
+      <div class="page-header">
+
+        <h1>Your search results</h1>
+
+      </div>
+
+      <div>
+      <!-- the 'raw' flag removes "" from the string -->
+      {{ whatToReturn | raw }}
+      </div>
+
+    </div>
+
+    </body>
+  </html>
