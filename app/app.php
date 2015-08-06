@@ -39,7 +39,7 @@
       $ford = new Car("2011 Ford F450", 55995, 14241, "/img/ford.jpg");
       $lexus = new Car("2013 Lexus RX 350", 44700, 20000, "/img/lexus.jpg");
       $mercedes = new Car("Mercedes Benz CLS550", 39900, 37979, "/img/cls550.jpg");
-      $mercedes->setPrice("35000.125");
+      $mercedes->setPrice(35000.925);
       $porsche->setPrice("hotdog");
       $user_price = $_GET["user_price"];
       $user_miles = $_GET["user_miles"];

@@ -38,7 +38,7 @@
     function setPrice($new_price) {
       $float_price = (float) $new_price;
       if ($float_price !=0) {
-        $formatted_price = number_format($float_price, 2);
+        $formatted_price = number_format($float_price, 0, '.', '');
         $this->price = $formatted_price;
       }
     }
